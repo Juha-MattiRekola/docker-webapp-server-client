@@ -18,23 +18,42 @@ If you already have Docker installed, you can jump right in:
 - Start Docker
 - Run the following commands:
 
+1. Get project from the GitHub
+
 ```bash
 git clone https://github.com/Juha-MattiRekola/docker-webapp-server-client.git
+```
+2. Move to the right directory
 
-cd docker-webapp-server-client         # move to the right directory
+```bash
+cd docker-webapp-server-client
+```
+3. Give scripts execution rights
 
-chmod +x run-server.sh run-client.sh   # give scripts execution rights
+```bash
+chmod +x run-server.sh run-client.sh
+```
+4. Build and start the server container
 
-./run-server.sh                        # build and start the server container
+```bash
+./run-server.sh
+```
 
-./run-client.sh                        # build and run the client container
+5. Build and run the client container
+                  
+```bash
+./run-client.sh
+```
 
-docker logs server-container           # check server logs
+6. Check server logs
+
+```bash
+docker logs server-container
 ```
 
 #### Optional part
 
-Client - received data from the server to the textfile "received.txt"
+**Client** - received data from the server to the textfile "received.txt"
 
 ```bash
 docker run --rm -it \
@@ -43,7 +62,7 @@ docker run --rm -it \
   cat /clientdata/received.txt
 ```
 
-Server - Check if the client data is similar to this random data that server created
+**Server** - Check if the client data is similar to this random data that server created
 
 ```bash
 docker run --rm -it \
@@ -65,13 +84,17 @@ docker run --rm -it \
 
 - **2. Clone the project from GitHub**
 
- ```bash
-  # Get project from the GitHub
-  git clone https://github.com/Juha-MattiRekola/docker-webapp-server-client.git
+Get project from the GitHub
 
-  # Move to the right directory
-  cd docker-webapp-server-client
-  ```
+```bash
+ git clone https://github.com/Juha-MattiRekola/docker-webapp-server-client.git
+```
+
+Move to the right directory
+
+```bash
+cd docker-webapp-server-client
+```
 
 ## Running the Application
 
@@ -239,9 +262,16 @@ docker rmi webapp-server webapp-client
 
 ### 5. Delete docker-webapp-server-client and its contents
 
+Move to the previous directory
+
 ```bash
-cd ..                                # Move to the previous directory
-rm -rf docker-webapp-server-client   # Remove directory and its contents
+cd ..
+```
+
+Remove directory and its contents
+
+```bash
+rm -rf docker-webapp-server-client
 ```
 
 - This removes the folder docker-webapp-server-client and everything inside it.
