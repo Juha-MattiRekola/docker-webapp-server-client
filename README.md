@@ -32,6 +32,26 @@ chmod +x run-server.sh run-client.sh   # give scripts execution rights
 docker logs server-container           # check server logs
 ```
 
+#### Optional part
+
+Client - received data from the server to the textfile "received.txt"
+
+```bash
+docker run --rm -it \
+  --mount source=clientvol,target=/clientdata \
+  alpine:latest \
+  cat /clientdata/received.txt
+```
+
+Server - Check if the client data is similar to this random data that server created
+
+```bash
+docker run --rm -it \
+  --mount source=servervol,target=/serverdata \
+  alpine:latest \
+  cat /serverdata/random.txt
+```
+  
 ## Prerequisites
 
 - **1. Install [Docker](https://docs.docker.com/get-docker/) on your system.**
