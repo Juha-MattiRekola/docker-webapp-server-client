@@ -20,6 +20,7 @@ If you already have Docker installed, you can jump right in:
 
 ```bash
 git clone https://github.com/Juha-MattiRekola/docker-webapp-server-client.git
+cd docker-webapp-server-client
 chmod +x run-server.sh run-client.sh   # give scripts execution rights
 ./run-server.sh                        # build and start the server container
 ./run-client.sh                        # build and run the client container
@@ -28,13 +29,20 @@ docker logs server-container           # check server logs
 
 ## Prerequisites
 
-- Install [Docker](https://docs.docker.com/get-docker/) on your system.
+- **Install [Docker](https://docs.docker.com/get-docker/) on your system.**
   - On **Windows/Mac**, use Docker Desktop.
   - On **Linux**, install Docker Engine via your package manager.
 - Verify installation by running:
 
   ```bash
   docker --version
+  ```
+
+- **Clone the project from GitHub**
+
+ ```bash
+  git clone https://github.com/Juha-MattiRekola/docker-webapp-server-client.git
+  cd docker-webapp-server-client
   ```
 
 ## Running the Application
