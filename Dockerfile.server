@@ -1,0 +1,17 @@
+# Haetaan alpine-kuva viimeisimmästä versiosta
+FROM alpine:latest
+
+# Asennetaan Python ja pip. Pip vain optiona python-pakettien hallintaan.
+RUN apk add --no-cache python3 py3-pip
+
+# Määritellään työskentelyhakemisto kontissa
+WORKDIR /serverapp
+
+# Kopioidaan paikallinen sovelluskoodi konttiin
+COPY server.py /serverapp/
+
+# Portti, jota sovellus käyttää
+EXPOSE 6000
+
+# Määritellään komento, joka suoritetaan kun kontti käynnistetään. server.py on sovelluksen pääskripti.
+CMD ["python3", "server.py"]

@@ -1,0 +1,14 @@
+# Käytetään taas Alpinen kuvaa pohjana
+FROM alpine:latest
+
+# Asennetaan Python ja pip. Pip on työkalu python-pakettien hallintaan.
+RUN apk add --no-cache python3 py3-pip
+
+# Määritellään työskentelyhakemisto kontissa
+WORKDIR /clientapp
+
+# Kopioidaan paikallinen sovelluskoodi konttiin
+COPY client.py /clientapp/
+
+# python käynnistetään ja suoritetaan client.py skripti
+CMD ["python3", "client.py"]
