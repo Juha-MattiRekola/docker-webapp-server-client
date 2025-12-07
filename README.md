@@ -34,7 +34,7 @@ docker logs server-container           # check server logs
 
 ## Prerequisites
 
-- **Install [Docker](https://docs.docker.com/get-docker/) on your system.**
+- **1. Install [Docker](https://docs.docker.com/get-docker/) on your system.**
   - On **Windows/Mac**, use Docker Desktop.
   - On **Linux**, install Docker Engine via your package manager.
 - Verify installation by running:
@@ -43,7 +43,7 @@ docker logs server-container           # check server logs
   docker --version
   ```
 
-- **Clone the project from GitHub**
+- **2. Clone the project from GitHub**
 
  ```bash
   # Get project from the GitHub
