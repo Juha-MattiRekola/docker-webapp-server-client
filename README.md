@@ -303,7 +303,7 @@ rm -rf docker-webapp-server-client
 
 After running these commands, all containers, volumes, networks, and images created by **this project** will be removed.  
 
-## Docker Hub Images
+## Docker Hub Images (No instructions)
 - [webapp-server](https://hub.docker.com/r/<your-username>/webapp-server)
 - [webapp-client](https://hub.docker.com/r/<your-username>/webapp-client)
 
