@@ -10,5 +10,5 @@ WORKDIR /clientapp
 # Kopioidaan paikallinen sovelluskoodi konttiin
 COPY client.py /clientapp/
 
-# python käynnistetään ja suoritetaan client.py skripti
+# Python käynnistetään ja suoritetaan client.py skripti
 CMD ["python3", "client.py"]
