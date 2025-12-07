@@ -216,7 +216,17 @@ docker rmi webapp-server webapp-client
 
 - Deletes the images built from Dockerfile.server and Dockerfile.client.
 
-### 5. Optional: prune unused resources (you might lose more than you want to)
+### 5. Delete docker-webapp-server-client and its contents
+
+```bash
+cd ..                                # Move to the previous directory
+rm -rf docker-webapp-server-client   # Remove directory and its contents
+```
+
+- This removes the folder docker-webapp-server-client and everything inside it.
+- **Be careful!!** Before you delete the folder, you need to make sure you are in its parent directory (the one just before docker-webapp-server-client).
+
+### 6. Optional: prune unused resources (you might lose more than you want to)
 
 ```bash
 docker system prune -a
@@ -234,6 +244,10 @@ docker rm -f server-container client-container
 docker volume rm servervol clientvol
 docker network rm webapp-network
 docker rmi webapp-server webapp-client
+
+# Remove directory and contents
+cd ..
+rm -rf docker-webapp-server-client
 ```
 
 After running these commands, all containers, volumes, networks, and images created by **this project** will be removed.  
