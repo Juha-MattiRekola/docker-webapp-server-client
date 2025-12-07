@@ -19,6 +19,7 @@ If you already have Docker installed, you can jump right in:
 - Run the following commands:
 
 ```bash
+git clone https://github.com/Juha-MattiRekola/docker-webapp-server-client.git
 chmod +x run-server.sh run-client.sh   # give scripts execution rights
 ./run-server.sh                        # build and start the server container
 ./run-client.sh                        # build and run the client container
@@ -220,6 +221,11 @@ docker rmi webapp-server webapp-client
 ```
 
 After running these commands, all containers, volumes, networks, and images created by **this project** will be removed.  
+
+## Docker Hub Images
+- [webapp-server](https://hub.docker.com/r/<your-username>/webapp-server)
+- [webapp-client](https://hub.docker.com/r/<your-username>/webapp-client)
+
 
 
 
