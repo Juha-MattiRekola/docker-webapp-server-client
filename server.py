@@ -1,4 +1,4 @@
-# socket=verkkoyhteys(TCP-socket), os=käyttöjärjestelmä, hashlib=tarkistussumman laskemiseen, random=satunnaisteksti 1 kb, string=merkkijonot, ei tarvetta RegExille tässä
+# Socket=verkkoyhteys(TCP-socket), os=käyttöjärjestelmä, hashlib=tarkistussumman laskemiseen, random=satunnaisteksti 1 kb, string=merkkijonot, ei tarvetta RegExille tässä
 import socket, os, hashlib, random, string
 
 # Hostina mikä tahansa osoite, portti 6000
