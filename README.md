@@ -210,7 +210,8 @@ When you are finished testing, you may want to remove all containers, volumes, n
 docker rm -f server-container client-container
 ```
 
-- -f forces removal even if the container is still running.
+- -f forces removal even if the container is still running
+- Client container should already be removed. Therefore it gives you an error: Error response from daemon: No such container: client-container
 
 ### 2. Remove volumes
 
