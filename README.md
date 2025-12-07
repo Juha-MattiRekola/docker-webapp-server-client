@@ -20,10 +20,15 @@ If you already have Docker installed, you can jump right in:
 
 ```bash
 git clone https://github.com/Juha-MattiRekola/docker-webapp-server-client.git
-cd docker-webapp-server-client
+
+cd docker-webapp-server-client         # move to the right directory
+
 chmod +x run-server.sh run-client.sh   # give scripts execution rights
+
 ./run-server.sh                        # build and start the server container
+
 ./run-client.sh                        # build and run the client container
+
 docker logs server-container           # check server logs
 ```
 
@@ -41,7 +46,10 @@ docker logs server-container           # check server logs
 - **Clone the project from GitHub**
 
  ```bash
+  # Get project from the GitHub
   git clone https://github.com/Juha-MattiRekola/docker-webapp-server-client.git
+
+  # Move to the right directory
   cd docker-webapp-server-client
   ```
 
